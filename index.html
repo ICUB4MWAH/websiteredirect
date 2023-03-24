@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our CV's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="http://thorton.our-cv.xyz/" class="w3-bar-item w3-button">Thorton's CV</a>
+  <a href="http://sam.our-cv.xyz/" class="w3-bar-item w3-button">Sam's's CV</a>
+</nav>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>Thorton & Sam's CV</h2>
+<p>Online CV's made by us.</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-container w3-padding-64">
+	<a href="http://thorton.our-cv.xyz/">
+	<img src="images/Thorton.png" alt="Image" style="width:45%" class="w3-circle w3-hover-opacity"/>
+	<h3>Thorton Ellmers-Bixley</h3>
+	</a>
+</div>
+
+<div class="w3-container w3-padding-64">
+	<a href="http://sam.our-cv.xyz/">
+	<img src="images/Sam.png" alt="Image" style="width:45%" class="w3-circle w3-hover-opacity"/>
+	<h3>Sam Smith</h3>
+	</a>
+</div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-theme-l5" id="contact">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  10, Cook Street, Waipukurau, 4200</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (06) 8586619</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ellmersthorton@gmail.com</p>
+</div>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
